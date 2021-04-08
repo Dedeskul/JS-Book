@@ -1,0 +1,36 @@
+body {
+  --main-background-color: #f0f2f5;
+  --main-shadow-color: #d9d9d9;
+  --light-gray-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-background-color);
+}
+
+.headerContainer {
+  min-width: 100%;
+  min-height: 7vh;
+}
+
+.mainPreview {
+  width: 100%;
+  min-height: 15rem;
+  box-shadow: 0 1px 5px 2px var(--main-shadow-color) inset;
+  background-image: url('../../images/homeBackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .mainContainer {
+ 
+} */
+
+.footerContainer {
+  min-width: 100%;
+  min-height: 20vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--light-gray-color);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
