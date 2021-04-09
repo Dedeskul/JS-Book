@@ -1,27 +1,21 @@
-const topics = [
-  'Design Patterns',
-  'Variables',
-  'Html',
-  'Css',
-  'Design',
-  'Design Patterns',
-  'Variables',
-  'Html',
-  'Css',
-  'Design',
+const cardsInfo = [
+  {
+    title: 'Design Patterns',
+    Image: '../../images/patterns',
+    description:
+      'Select this card to open page with most common Design Patterns',
+  },
+  {
+    title: 'JavaScript Basis',
+    Image: '../../images/basic',
+    description:
+      'Select this card to open page with basic information about JavaScript programming ( data types, functions, classes etc... )',
+  },
+  {
+    title: 'Home Tasks',
+    Image: '../../images/homeTask',
+    description: 'Select this card to open page with home tasks',
+  },
 ]
 
-const mainContentContainer = document.getElementById('mainContent')
 
-const createtopics = () => {
-  topics.forEach((topic) => {
-    const topicContainer = document.createElement('div')
-    topicContainer.classList.add('mainContentTopicCard')
-    mainContentContainer.appendChild(topicContainer)
-  })
-}
-
-window.onload = function () {
-  createtopics()
-  console.log(mainContentContainer)
-}

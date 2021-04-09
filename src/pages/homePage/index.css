@@ -20,25 +20,44 @@ body {
   background-color: var(--main-background-color);
   box-shadow: 0 0px 5px 2px var(--main-shadow-color);
 }
+
 .headerSearch {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.headerLogo {
+  width: 40px;
+  height: 40px;
+  border: 3px solid black;
+  border-radius: 50%;
+  margin-left: 1rem;
+  background-image: url('../../images/book.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 13px 0px 0px 0px orange;
+  transition: 0.2s ease-in;
+}
+
+.headerLogo:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 1px orange;
 }
 
 .headerSearch input {
   width: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 5px;
+  padding: 8px;
   outline: none;
   border-radius: 5px;
 }
 
 .headerSearch input:active,
 .headerSearch input:focus {
-  border: 1px solid rgba(100, 195, 233, 0.5);
-  box-shadow: 0 0 4px 1px rgba(100, 195, 233, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 .headerNavigation {
@@ -47,6 +66,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-right: 5rem;
 }
 
 .headerNavigation a {
@@ -59,7 +79,7 @@ body {
 }
 
 .headerNavigation a:after {
-  background-color: #ff6000;
+  background-color: orange;
   display: block;
   content: '';
   height: 3px;
@@ -84,14 +104,9 @@ body {
   justify-content: flex-start;
   flex-wrap: wrap;
   padding-top: 2rem;
-  margin-bottom: 20vh;
-}
-
-.mainPreview {
-  width: 100%;
-  min-height: 15rem;
-  box-shadow: 0 1px 5px 2px var(--main-shadow-color) inset;
+  min-height: 93vh;
   background-image: url('../../images/homeBackground.jpg');
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -110,7 +125,23 @@ body {
   min-height: 20vh;
   background-color: rgba(0, 0, 0, 0.8);
   color: var(--light-gray-color);
-  position: fixed;
-  bottom: 0;
-  left: 0;
+}
+
+@media (max-width: 576px) {
+  .headerContainer {
+    flex-direction: column;
+  }
+
+  .headerSearch {
+    width: 100%;
+  }
+
+  .headerSearch input {
+    margin-right: 1rem;
+  }
+
+  .headerNavigation {
+    width: 100%;
+    margin-top: 1rem;
+  }
 }
