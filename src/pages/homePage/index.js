@@ -17,5 +17,3 @@ const cardsInfo = [
     description: 'Select this card to open page with home tasks',
   },
 ]
-
-
