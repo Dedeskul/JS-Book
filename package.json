@@ -1,0 +1,26 @@
+{
+  "name": "js-book",
+  "version": "1.0.0",
+  "description": "JavaScript documentation guide",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "webpack serve --mode development --open",
+    "built": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dedeskul/JS-Book.git"
+  },
+  "author": "Dedeskul Vladymyr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dedeskul/JS-Book/issues"
+  },
+  "homepage": "https://github.com/Dedeskul/JS-Book#readme",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
